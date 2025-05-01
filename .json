@@ -1,0 +1,17 @@
+[
+  {
+    "Name": "Item One",
+    "Description": "This is the first item.",
+    "Value": 100.50
+  },
+  {
+    "Name": "Item Two",
+    "Description": "A description for the second item.",
+    "Value": 25.75
+  },
+  {
+    "Name": "Item Three",
+    "Description": "The third and final item.",
+    "Value": 120.00
+  }
+]
