@@ -18,5 +18,5 @@
 
 ## Requirements
 
-* Net 6.0
+* Net 9.0
 * Windows 10-11
