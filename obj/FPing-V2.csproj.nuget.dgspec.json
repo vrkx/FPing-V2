@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gote\\source\\repos\\FPing-V2\\FPing-V2.csproj": {}
+    "C:\\Users\\gote\\Documents\\GitHub\\FPing-v2\\FPing-V2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gote\\source\\repos\\FPing-V2\\FPing-V2.csproj": {
+    "C:\\Users\\gote\\Documents\\GitHub\\FPing-v2\\FPing-V2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gote\\source\\repos\\FPing-V2\\FPing-V2.csproj",
+        "projectUniqueName": "C:\\Users\\gote\\Documents\\GitHub\\FPing-v2\\FPing-V2.csproj",
         "projectName": "FPing-V2",
-        "projectPath": "C:\\Users\\gote\\source\\repos\\FPing-V2\\FPing-V2.csproj",
+        "projectPath": "C:\\Users\\gote\\Documents\\GitHub\\FPing-v2\\FPing-V2.csproj",
         "packagesPath": "C:\\Users\\gote\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gote\\source\\repos\\FPing-V2\\obj\\",
+        "outputPath": "C:\\Users\\gote\\Documents\\GitHub\\FPing-v2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\gote\\AppData\\Roaming\\NuGet\\NuGet.Config",

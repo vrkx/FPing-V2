@@ -54,6 +54,33 @@ namespace FPing_V2.Animations
             storyboard.Begin(element);
         }
 
+        public static void FadeIn(this FrameworkElement element, double durationInSeconds = 0.1, Action onCompleted = null, bool hideElementAfterFade = true)
+        {
+            if (element == null) return;
+
+            // Ensure the element is visible before starting to fade out
+            element.Visibility = Visibility.Visible; // This is good to prevent issues if it was Collapsed
+
+            DoubleAnimation fadeOutAnimation = new DoubleAnimation
+            {
+                From = element.Opacity,
+                To = 1.0,
+                Duration = new Duration(TimeSpan.FromSeconds(durationInSeconds)),
+                // *** CRITICAL for staying faded out ***
+                FillBehavior = FillBehavior.Stop
+            };
+
+            Storyboard storyboard = new Storyboard();
+            storyboard.Children.Add(fadeOutAnimation);
+
+            Storyboard.SetTarget(fadeOutAnimation, element);
+            Storyboard.SetTargetProperty(fadeOutAnimation, new PropertyPath(UIElement.OpacityProperty));
+
+          
+
+            storyboard.Begin(element);
+        }
+
         /// <summary>
         /// Fades in a UI element with an upward bouncy animation.
         /// </summary>

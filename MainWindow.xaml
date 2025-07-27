@@ -13,6 +13,15 @@
 
     <Grid>
 
+        <Grid Margin="0,0,0,504" Panel.ZIndex="1000">
+
+            <Border  Background="#7F000000"/>
+            <Label Content="X" Foreground="White" Style="{DynamicResource SanFrancisco}" Margin="758,2,4,2"/>
+            <Button Opacity="0.01" Click="Button_Click_5" Margin="754,1,0,1" Background="#00DDDDDD" BorderBrush="{x:Null}" />
+            <Label Content="-" Foreground="White" Style="{DynamicResource SanFrancisco}" Margin="731,2,31,2"/>
+            <Button Opacity="0.01" Click="Button_Click_6" Margin="727,1,27,1" Background="#00DDDDDD" BorderBrush="{x:Null}" />
+        </Grid>
+
         <Border CornerRadius="10" Background="#101015" />
 
         <Grid>
@@ -26,7 +35,28 @@
                 </Border.Background>
             </Border>
 
-            <Grid Margin="195,148,195,148" Name="WBanner" Visibility="Visible" Panel.ZIndex="2">
+
+            <Grid Margin="195,148,195,148" Name="Loading" Visibility="Visible" Opacity="1" Panel.ZIndex="3">
+
+
+
+                <Image Source="/public/imgs/icons/LoadingBar.png" Width="30" Height="30" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,169,0,0" Panel.ZIndex="11">
+                    <Image.RenderTransform>
+                        <RotateTransform x:Name="RotationTransform" CenterX="15" CenterY="15"/>
+                    </Image.RenderTransform>
+                </Image>
+
+
+                <Border Background="#151520" CornerRadius="10" BorderBrush="#202030" BorderThickness="1.5"/>
+                <Image Margin="84,42,56,82" Source="/public/imgs/logo.png" Stretch="Fill"/>
+                <Label Content="Loading..." FontSize="20" HorizontalAlignment="Center" Foreground="White" Style="{StaticResource SanFrancisco}" Margin="0,131,0,41"/>
+
+
+            </Grid>
+
+
+
+            <Grid Margin="195,194,195,102" Name="WBanner" Visibility="Hidden" Opacity="0" Panel.ZIndex="2">
 
 
                 <Border Background="#151520" CornerRadius="10" BorderBrush="#202030" BorderThickness="1.5"/>
@@ -47,45 +77,283 @@
 
             <Grid Margin="195,194,195,102" Name="Options" Opacity="0.0">
                 <Grid.RenderTransform>
-                <TransformGroup>
-                    <TranslateTransform Y="0"/>
-                </TransformGroup>
-                </Grid.RenderTransform> 
-               
+                    <TransformGroup>
+                        <TranslateTransform Y="0"/>
+                    </TransformGroup>
+                </Grid.RenderTransform>
+
 
                 <Border Background="#151520" CornerRadius="10" BorderBrush="#202030" BorderThickness="1.5"/>
-                <Label Content="You can change the theme later" HorizontalAlignment="Center" FontSize="15" Foreground="Gray" Style="{StaticResource SanFrancisco}" Margin="0,193,0,10"/>
+                <Label Content="You can change the theme later" HorizontalAlignment="Center" FontSize="10" Foreground="Gray" Style="{StaticResource SanFrancisco}" Margin="0,41,0,171" Width="150"/>
                 <Label Content="Select the theme you like the most!" FontSize="20" HorizontalAlignment="Center" Foreground="White" Style="{StaticResource SanFrancisco}" Margin="0,10,0,193"/>
 
                 <Grid Margin="34,72,34,72">
 
-                 
+
 
                     <Grid Margin="22,5,219,5">
-                        <Button Panel.ZIndex="-5" Opacity="0.001" Background="#02DDDDDD" Click="Button_Click" />
-                        <Border Background="White" BorderBrush="#202035" BorderThickness="1" CornerRadius="50" Margin="8,0,8,17"/>
+                        <Button Cursor="Hand" Panel.ZIndex="5" Opacity="0.001" Background="#02DDDDDD" Click="Button_Click" Height="80" VerticalAlignment="Top" />
+                        <Border Name="White" Background="White" BorderBrush="Gray" BorderThickness="1" CornerRadius="50" Margin="8,0,8,17"/>
                         <Label Content="White" FontSize="9" Foreground="White" Style="{StaticResource SanFrancisco}" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,60,0,0"/>
                     </Grid>
 
                     <Grid Margin="120,5,120,5">
-
-                        <Border Background="#151520" BorderBrush="#202035" BorderThickness="1" CornerRadius="50" Margin="9,0,9,17"/>
+                        <Button Cursor="Hand" Panel.ZIndex="5" Opacity="0.001" Background="#02DDDDDD" Click="Button_Click_1" Height="80" VerticalAlignment="Top" />
+                        <Border Name="Defaukt" Background="#151520" BorderBrush="LightGreen" BorderThickness="1" CornerRadius="50" Margin="9,0,9,17"/>
                         <Label Content="Default" FontSize="9" Foreground="White" Style="{StaticResource SanFrancisco}" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,60,0,0"/>
                     </Grid>
                     <Grid Margin="221,5,19,5">
-
-                        <Border Background="Black" BorderBrush="#202035" BorderThickness="1" CornerRadius="50" Margin="9,0,9,17"/>
+                        <Button Cursor="Hand" Panel.ZIndex="5" Opacity="0.001" Background="#02DDDDDD" Click="Button_Click_2" Height="80" VerticalAlignment="Top" />
+                        <Border Name="Black" Background="Black" BorderBrush="Gray" BorderThickness="1" CornerRadius="50" Margin="9,0,9,17"/>
                         <Label Content="Black" FontSize="9" Foreground="White" Style="{StaticResource SanFrancisco}" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,60,0,0"/>
                     </Grid>
 
+
                 </Grid>
 
+                <Grid Margin="10,199,10,10">
 
-                  
+                    <Border Background="#202090" CornerRadius="5"/>
+                    <Button Opacity="0.01" Cursor="Hand" Click="Button_Click_3" Panel.ZIndex="1"/>
+                    <Image Source="/public/imgs/icons/save.png" Margin="344,5,10,5" RenderTransformOrigin="0.556,0.111"/>
+                    <Label Content="Save" Style="{DynamicResource SanFrancisco}" Foreground="White"  Margin="10,0,324,0"/>
+                </Grid>
+
 
             </Grid>
 
         </Grid>
 
+        <Grid Margin="195,194,195,102" Name="NameIn" Visibility="Hidden" Opacity="0.0">
+            <Grid.RenderTransform>
+                <TransformGroup>
+                    <TranslateTransform Y="0"/>
+                </TransformGroup>
+            </Grid.RenderTransform>
+
+
+            <Border Background="#151520" CornerRadius="10" BorderBrush="#202030" BorderThickness="1.5"/>
+            <Label Content="Finally, What would you like to be called?" FontSize="20" HorizontalAlignment="Center" Foreground="White" Style="{StaticResource SanFrancisco}" Margin="0,10,0,193"/>
+
+
+            <Grid Margin="46,58,46,58">
+
+                <Border Background="#101015" CornerRadius="5" BorderBrush="#202025" BorderThickness="1"/>
+                <StackPanel Margin="23,18,216,41">
+
+                    <Ellipse Height="59" Stroke="Black">
+
+                        <Ellipse.Fill>
+
+                            <ImageBrush x:Name="SkinImageBrush" ImageSource="/public/imgs/Ramirez.png"/>
+
+                        </Ellipse.Fill>
+
+                    </Ellipse>
+
+                </StackPanel>
+
+                <Border Background="#050507" Margin="87,44,15,44" CornerRadius="5" BorderBrush="#202025" BorderThickness="1"/>
+                <TextBox Name="Inpu" TextAlignment="Left" Text="@Username" Background="Transparent" Margin="93,48,15,50" BorderBrush="{x:Null}" SelectionBrush="#000078D7" SelectionTextBrush="Transparent" Foreground="White"/>
+
+            </Grid>
+
+
+            <Grid Margin="10,199,10,10">
+
+                <Border Background="#202090" CornerRadius="5"/>
+                <Button Opacity="0.01" Cursor="Hand" Click="Button_Click_4" Panel.ZIndex="1"/>
+                <Image Source="/public/imgs/icons/arror.png" Margin="344,5,10,5" RenderTransformOrigin="0.556,0.111"/>
+                <Label Content="Continue to Launcher" Style="{DynamicResource SanFrancisco}" Foreground="White"  Margin="10,0,212,0"/>
+            </Grid>
+            <Label Content="You can change your name later on settings" FontSize="10" HorizontalAlignment="Left" Foreground="DarkGray" Style="{StaticResource SanFrancisco}" Margin="50,149,0,54"/>
+            <Label Content="Hi! , I'm :" FontSize="10" HorizontalAlignment="Left" Foreground="White" Style="{StaticResource SanFrancisco}" Margin="131,81,0,122"/>
+
+
+        </Grid>
+
+        <Grid Name="Launcher" Visibility="Visible">
+
+            <Border Name="LauncherBG">
+                <Border.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF101015"/>
+                        <GradientStop Color="#FF202050" Offset="0.997"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+            </Border>
+
+            <Image Source="/public/imgs/icons/vur.png" Margin="126,26,620,470" Opacity="0.5"/>
+
+            <Grid Margin="0,27,620,0">
+
+                <Image Source="/public/imgs/logo.png" Margin="20,6,0,427"/>
+
+                <Grid Margin="7,113,7,354">
+                    <Button Cursor="Hand" Click="Button_Click_7" Opacity="0.01" BorderBrush="{x:Null}" Panel.ZIndex="111"/>
+                    <Border Background="#59000000" CornerRadius="5" Opacity="0.5"/>
+                    <Image Source="/public/imgs/icons/wiput.png" Margin="13,7,101,7" Opacity="0.8"/>
+                    <Label Content="Servers" Style="{StaticResource SanFrancisco}" Foreground="White" Margin="51,6,38,6" Opacity="0.8"/>
+
+                </Grid>
+                <Grid Margin="7,154,7,313">
+                    <Button Cursor="Hand" Click="Button_Click_9"
+ Opacity="0.01" BorderBrush="{x:Null}" Panel.ZIndex="111"/>
+                    <Border Background="#59000000" CornerRadius="5" Opacity="0.5"/>
+                    <Image Source="/public/imgs/icons/settings.png" Margin="13,7,101,7" Opacity="0.8"/>
+                    <Label Content="Settings" Style="{StaticResource SanFrancisco}" Foreground="White" Margin="51,6,38,6" Opacity="0.8"/>
+
+                </Grid>
+
+
+                <Grid Margin="7,72,7,395">
+
+                    <Border Background="#59000000" CornerRadius="5" Opacity="0.5"/>
+                    <Button Opacity="0.01" Cursor="Hand" BorderBrush="{x:Null}" Click="Button_Click_8"/>
+                    <Image Source="/public/imgs/icons/home.png" Margin="13,7,101,7" Opacity="0.8"/>
+                    <Label Content="Home" Style="{StaticResource SanFrancisco}" Foreground="White" Margin="51,6,51,6" Opacity="0.8"/>
+
+                </Grid>
+
+
+            </Grid>
+
+            <Grid Name="Home" Margin="160,27,0,0" Visibility="Visible" Opacity="1">
+
+
+
+                <Border Background="Black" Opacity="0.5" Margin="0,-1,0,0"/>
+                
+                <Grid Margin="10,28,10,370">
+                    <Border Background="Black" CornerRadius="5" Opacity="0.5" Margin="10,35,10,10"/>
+                    <Label Name="WelocmS" Style="{StaticResource SanFrancisco}" Foreground="White" Content="Welcome ..." FontSize="26" Margin="117,39,10,20" Opacity="0.9"/>
+                    <StackPanel Margin="14,0,488,13">
+
+                        <Ellipse Height="96" >
+
+                            <Ellipse.Fill>
+
+                                <ImageBrush x:Name="Skin" ImageSource="/public/imgs/Ramirez.png" Stretch="Fill"/>
+
+                            </Ellipse.Fill>
+
+                        </Ellipse>
+
+                    </StackPanel>
+                    <Label Style="{StaticResource ResourceKey=SanFrancisco}" Foreground="White" Content="Hoping you are having a great day!" FontSize="10" Margin="117,65,10,-6" Opacity="0.7"/>
+
+                </Grid>
+
+                <Grid Margin="22,138,22,251">
+
+                    <Border CornerRadius="5">
+                        <Border.Background>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="#FF7DFF00"/>
+                                <GradientStop Color="#FFBEFF7C" Offset="1"/>
+                            </LinearGradientBrush>
+                        </Border.Background>
+                    </Border>
+
+                    <Image Source="/public/imgs/icons/wif.png" Margin="-103,6,384,49" RenderTransformOrigin="0.5,0.5">
+                        <Image.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="-13.038"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Image.RenderTransform>
+                    </Image>
+
+                    <Label Content="V2 is Here!" FontWeight="Bold" Foreground="White" FontSize="36" Margin="86,0,86,30"/>
+                    <Label Content="This is a big update that contains a lot of enhacements" FontWeight="Bold" Foreground="White" FontSize="16" Margin="73,42,-61,-12"/>
+                    <Label Content="for the app, and also a lot of rework for the internal code!" FontWeight="Bold" Foreground="White" FontSize="16" Margin="48,62,-36,-32"/>
+
+                </Grid>
+
+                <Grid Margin="22,270,22,10">
+
+                    <Border CornerRadius="5" Background="#7F000000"/>
+
+                    <Image Source="/public/imgs/icons/cry.png" Margin="257,20,257,35" RenderTransformOrigin="0.5,0.5" Opacity="0.8">
+
+                    </Image>
+                    <Label Content="No news to show." HorizontalAlignment="Center" FontWeight="SemiBold" Foreground="#FF4E4E4E" FontSize="16" Margin="0,135,0,51"/>
+
+
+
+
+                </Grid>
+            </Grid>
+
+            <Grid Name="Servers" Margin="160,27,0,0" Visibility="Hidden" Opacity="0">
+
+                <Border Background="Black" Opacity="0.5" Margin="0,-1,0,0"/>
+              
+
+
+            </Grid>
+
+
+            <Grid Name="Settings" Margin="160,27,0,0" Visibility="Hidden" Opacity="0">
+
+                <Border Background="Black" Opacity="0.5" Margin="0,-1,0,0"/>
+
+                <Grid Margin="21,23,21,444">
+
+                    <Border Background="Black" Opacity="0.5" CornerRadius="5" BorderBrush="#FF1F1F1F" BorderThickness="0.5"/>
+                    <Label Content="Theme" Foreground="LightGray" FontWeight="SemiBold" FontSize="16" Margin="6,-5,399,-5"/>
+                    <Label FontWeight="Light" Content="Changes the theme of the launcher background" Foreground="DarkGray" FontSize="13" Margin="6,11,132,-2"/>
+
+                    <Grid Margin="390,0,0,0">
+
+                        <Border Background="White" CornerRadius="100" Margin="90,5,72,5" BorderBrush="Gray" BorderThickness="0.5"/>
+                        <Border Background="#101015" CornerRadius="100" Margin="121,5,41,5" BorderBrush="Gray" BorderThickness="0.5"/>
+                        <Border Background="Black" CornerRadius="100" Margin="152,5,10,5" BorderBrush="Gray" BorderThickness="0.5"/>
+
+                        <Button Name="WhiteTH" Margin="90,5,72,5" Opacity="0.01" Click="WhiteTH_Click" Cursor="Hand" Background="Black" BorderBrush="{x:Null}"/>
+                        <Button x:Name="Deff" Margin="121,5,41,5" Opacity="0.01" Click="Deff_Click" Cursor="Hand" Background="Black" BorderBrush="{x:Null}"/>
+                        <Button x:Name="Defsf" Margin="152,5,10,5" Opacity="0.01" Click="Defsf_Click" Cursor="Hand" Background="Black" BorderBrush="{x:Null}"/>
+
+                    </Grid>
+
+                </Grid>
+
+
+
+
+            </Grid>
+            <Image Source="/public/imgs/icons/vur.png" Margin="126,496,620,0" Opacity="0.5" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-270"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+
+
+        </Grid>
+
     </Grid>
+
+
+
+
+    <Window.Triggers>
+        <EventTrigger RoutedEvent="Loaded">
+            <BeginStoryboard>
+                <Storyboard RepeatBehavior="Forever">
+                    <DoubleAnimation
+                        Storyboard.TargetName="RotationTransform"
+                        Storyboard.TargetProperty="Angle"
+                        From="0" To="360" Duration="0:0:2"/>
+                </Storyboard>
+            </BeginStoryboard>
+        </EventTrigger>
+    </Window.Triggers>
+
 </Window>

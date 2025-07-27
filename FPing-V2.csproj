@@ -13,14 +13,45 @@
     <None Remove="public\fonts\SanFrancisco-Medium.otf" />
     <None Remove="public\imgs\icons\arror.png" />
     <None Remove="public\imgs\icons\continue.png" />
+    <None Remove="public\imgs\icons\cry.png" />
+    <None Remove="public\imgs\icons\home.png" />
+    <None Remove="public\imgs\icons\LoadingBar.png" />
+    <None Remove="public\imgs\icons\save.png" />
+    <None Remove="public\imgs\icons\settings.png" />
+    <None Remove="public\imgs\icons\wif.png" />
+    <None Remove="public\imgs\icons\wiput.png" />
     <None Remove="public\imgs\logo.png" />
+    <None Remove="public\imgs\Ramirez.png" />
   </ItemGroup>
 
   <ItemGroup>
     <Resource Include="public\fonts\SanFrancisco-Medium.otf" />
     <Resource Include="public\imgs\icons\arror.png" />
     <Resource Include="public\imgs\icons\continue.png" />
+    <Resource Include="public\imgs\icons\cry.png" />
+    <Resource Include="public\imgs\icons\home.png" />
+    <Resource Include="public\imgs\icons\LoadingBar.png" />
+    <Resource Include="public\imgs\icons\save.png" />
+    <Resource Include="public\imgs\icons\settings.png" />
+    <Resource Include="public\imgs\icons\wif.png" />
+    <Resource Include="public\imgs\icons\wiput.png" />
     <Resource Include="public\imgs\logo.png" />
+    <Resource Include="public\imgs\Ramirez.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Data.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Data.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Data.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Data.Designer.cs</LastGenOutput>
+    </None>
   </ItemGroup>
 
 </Project>
