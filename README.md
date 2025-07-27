@@ -1,22 +1,19 @@
 
-<img src="https://github.com/user-attachments/assets/356f2367-caba-43c6-a8fd-db0b2860dcf0" alt="title text" width="400">
+<img width="550" height="110" alt="show" src="https://github.com/user-attachments/assets/910c1171-8ed8-4fdf-96e7-1785bc280af3" />
 
-**FPing** provides a **quick and efficient way to monitor your connection to Fortnite servers in real-time.** This free tool allows you to check your ping (ms) before launching the game, helping you identify the best server for a smoother and more responsive gaming experience. Avoid the frustration of high ping and ensure you're always connecting to the optimal server.
+**FPing** provides a **quick and efficient way to monitor your connection to Fortnite servers in real-time.** This free tool allows you to check your ping (ms) before launching the game, helping you identify the best server for less delay. 
+
+> This is an enhanced version of [FPing](https://github.com/vrkx/FPing/)
 
 ## Features
 
 * Real-time ping display
-* Checks multiple servers (if applicable)
+* Checks multiple servers 
 * Lightweight and easy to use
 
-## Installation Steps
-
- 1. Download the latest release.
- 2. Extract the files.
- 3. Run the executable.
 
 
 ## Requirements
 
-* Net 9.0
+* [Net 8.0](https://dotnet.microsoft.com/en-us/download/dotnet/8.0)
 * Windows 10-11
