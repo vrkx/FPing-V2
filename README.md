@@ -37,4 +37,12 @@
 
 * [Net 8.0](https://dotnet.microsoft.com/en-us/download/dotnet/8.0)
 * Windows 10-11
+
+## TO-DO
+
+- Exit, Minimize buttons
+- News
+- Drag window
+- Discord Game Activity
+- More pfps, custom onew
 * WebView2 (Most people have it)
