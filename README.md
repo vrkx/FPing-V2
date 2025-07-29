@@ -17,3 +17,4 @@
 
 * [Net 8.0](https://dotnet.microsoft.com/en-us/download/dotnet/8.0)
 * Windows 10-11
+* WebView2 (Most people have it)

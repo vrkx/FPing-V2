@@ -1,0 +1,131 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <RootNamespace>FPing_V2</RootNamespace>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="public\fonts\SanFrancisco-Medium.otf" />
+    <None Remove="public\launcher\data\en.json" />
+    <None Remove="public\launcher\data\es.json" />
+    <None Remove="public\launcher\data\news.json" />
+    <None Remove="public\launcher\data\servers.json" />
+    <None Remove="public\launcher\imgs\icons\arror.png" />
+    <None Remove="public\launcher\imgs\icons\continue.png" />
+    <None Remove="public\launcher\imgs\icons\cry.png" />
+    <None Remove="public\launcher\imgs\icons\home.png" />
+    <None Remove="public\launcher\imgs\icons\LoadingBar.png" />
+    <None Remove="public\launcher\imgs\icons\save.png" />
+    <None Remove="public\launcher\imgs\icons\settings.png" />
+    <None Remove="public\launcher\imgs\icons\theme.png" />
+    <None Remove="public\launcher\imgs\icons\user.png" />
+    <None Remove="public\launcher\imgs\icons\vur.png" />
+    <None Remove="public\launcher\imgs\icons\wif.png" />
+    <None Remove="public\launcher\imgs\icons\wiput.png" />
+    <None Remove="public\launcher\imgs\logo.png" />
+    <None Remove="public\launcher\imgs\Ramirez.png" />
+    <None Remove="public\launcher\index.html" />
+    <None Remove="public\launcher\script.js" />
+    <None Remove="public\launcher\servers.json" />
+    <None Remove="public\launcher\style.css" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="public\launcher\data\en.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\launcher\data\es.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\launcher\data\news.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\launcher\data\servers.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\launcher\style.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="public\fonts\SanFrancisco-Medium.otf" />
+    <Content Include="public\launcher\imgs\icons\arror.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\launcher\imgs\icons\continue.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\launcher\imgs\icons\cry.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\launcher\imgs\icons\home.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\launcher\imgs\icons\LoadingBar.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\launcher\imgs\icons\save.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\launcher\imgs\icons\settings.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\launcher\imgs\icons\theme.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\launcher\imgs\icons\user.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\launcher\imgs\icons\vur.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\launcher\imgs\icons\wif.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\launcher\imgs\icons\wiput.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\launcher\imgs\logo.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\launcher\imgs\Ramirez.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\launcher\index.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\launcher\script.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Data.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Data.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Data.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Data.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="public\internal\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.3351.48" />
+  </ItemGroup>
+
+</Project>

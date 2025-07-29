@@ -3,20 +3,43 @@
   "WorkspaceRootPath": "C:\\Users\\gote\\Documents\\GitHub\\FPing-v2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8FE49247-6661-42D0-8557-160AD37444DA}|FPing-V2.csproj|c:\\users\\gote\\documents\\github\\fping-v2\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{8FE49247-6661-42D0-8557-160AD37444DA}|FPing-V2.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{AF3F2C08-A80D-BBC6-D210-03C9C0A6CA12}|src\\FPing-V2.csproj|c:\\users\\gote\\documents\\github\\fping-v2\\src\\public\\launcher\\script.js||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{AF3F2C08-A80D-BBC6-D210-03C9C0A6CA12}|src\\FPing-V2.csproj|solutionrelative:src\\public\\launcher\\script.js||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8FE49247-6661-42D0-8557-160AD37444DA}|FPing-V2.csproj|c:\\users\\gote\\documents\\github\\fping-v2\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8FE49247-6661-42D0-8557-160AD37444DA}|FPing-V2.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AF3F2C08-A80D-BBC6-D210-03C9C0A6CA12}|src\\FPing-V2.csproj|c:\\users\\gote\\documents\\github\\fping-v2\\src\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF3F2C08-A80D-BBC6-D210-03C9C0A6CA12}|src\\FPing-V2.csproj|solutionrelative:src\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8FE49247-6661-42D0-8557-160AD37444DA}|FPing-V2.csproj|c:\\users\\gote\\documents\\github\\fping-v2\\data.settings||{6D2695F9-5365-4A78-89ED-F205C045BFE6}",
-      "RelativeMoniker": "D:0:0:{8FE49247-6661-42D0-8557-160AD37444DA}|FPing-V2.csproj|solutionrelative:data.settings||{6D2695F9-5365-4A78-89ED-F205C045BFE6}"
+      "AbsoluteMoniker": "D:0:0:{AF3F2C08-A80D-BBC6-D210-03C9C0A6CA12}|src\\FPing-V2.csproj|c:\\users\\gote\\documents\\github\\fping-v2\\src\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{AF3F2C08-A80D-BBC6-D210-03C9C0A6CA12}|src\\FPing-V2.csproj|solutionrelative:src\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8FE49247-6661-42D0-8557-160AD37444DA}|FPing-V2.csproj|c:\\users\\gote\\documents\\github\\fping-v2\\public\\functions\\animaui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8FE49247-6661-42D0-8557-160AD37444DA}|FPing-V2.csproj|solutionrelative:public\\functions\\animaui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AF3F2C08-A80D-BBC6-D210-03C9C0A6CA12}|src\\FPing-V2.csproj|c:\\users\\gote\\documents\\github\\fping-v2\\src\\public\\launcher\\style.css||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{AF3F2C08-A80D-BBC6-D210-03C9C0A6CA12}|src\\FPing-V2.csproj|solutionrelative:src\\public\\launcher\\style.css||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF3F2C08-A80D-BBC6-D210-03C9C0A6CA12}|src\\FPing-V2.csproj|c:\\users\\gote\\documents\\github\\fping-v2\\src\\setup.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF3F2C08-A80D-BBC6-D210-03C9C0A6CA12}|src\\FPing-V2.csproj|solutionrelative:src\\setup.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF3F2C08-A80D-BBC6-D210-03C9C0A6CA12}|src\\FPing-V2.csproj|c:\\users\\gote\\documents\\github\\fping-v2\\src\\setup.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{AF3F2C08-A80D-BBC6-D210-03C9C0A6CA12}|src\\FPing-V2.csproj|solutionrelative:src\\setup.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF3F2C08-A80D-BBC6-D210-03C9C0A6CA12}|src\\FPing-V2.csproj|c:\\users\\gote\\documents\\github\\fping-v2\\src\\colorbrightnessconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF3F2C08-A80D-BBC6-D210-03C9C0A6CA12}|src\\FPing-V2.csproj|solutionrelative:src\\colorbrightnessconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF3F2C08-A80D-BBC6-D210-03C9C0A6CA12}|src\\FPing-V2.csproj|c:\\users\\gote\\documents\\github\\fping-v2\\src\\fping-v2.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{AF3F2C08-A80D-BBC6-D210-03C9C0A6CA12}|src\\FPing-V2.csproj|solutionrelative:src\\fping-v2.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gote\\Documents\\GitHub\\FPing-v2\\src\\obj\\Debug\\net8.0-windows\\MainWindow.g.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\obj\\Debug\\net8.0-windows\\MainWindow.g.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,57 +49,130 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Data.settings",
-              "DocumentMoniker": "C:\\Users\\gote\\Documents\\GitHub\\FPing-v2\\Data.settings",
-              "RelativeDocumentMoniker": "Data.settings",
-              "ToolTip": "C:\\Users\\gote\\Documents\\GitHub\\FPing-v2\\Data.settings",
-              "RelativeToolTip": "Data.settings",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002767|",
-              "WhenOpened": "2025-07-27T03:23:08.816Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\gote\\Documents\\GitHub\\FPing-v2\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "MainWindow.xaml",
-              "ToolTip": "C:\\Users\\gote\\Documents\\GitHub\\FPing-v2\\MainWindow.xaml",
-              "RelativeToolTip": "MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-07-27T03:17:30.811Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\gote\\Documents\\GitHub\\FPing-v2\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\gote\\Documents\\GitHub\\FPing-v2\\MainWindow.xaml.cs",
-              "RelativeToolTip": "MainWindow.xaml.cs",
-              "ViewState": "AgIAACUBAAAAAAAAAAAQwOkAAAAUAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\gote\\Documents\\GitHub\\FPing-v2\\src\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "src\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\gote\\Documents\\GitHub\\FPing-v2\\src\\MainWindow.xaml.cs",
+              "RelativeToolTip": "src\\MainWindow.xaml.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAowEwAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-27T03:38:53.34Z",
+              "WhenOpened": "2025-07-27T16:37:04.769Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\gote\\Documents\\GitHub\\FPing-v2\\src\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "src\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\gote\\Documents\\GitHub\\FPing-v2\\src\\MainWindow.xaml",
+              "RelativeToolTip": "src\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-27T16:36:50.495Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "AnimaUI.cs",
-              "DocumentMoniker": "C:\\Users\\gote\\Documents\\GitHub\\FPing-v2\\public\\functions\\AnimaUI.cs",
-              "RelativeDocumentMoniker": "public\\functions\\AnimaUI.cs",
-              "ToolTip": "C:\\Users\\gote\\Documents\\GitHub\\FPing-v2\\public\\functions\\AnimaUI.cs",
-              "RelativeToolTip": "public\\functions\\AnimaUI.cs",
-              "ViewState": "AgIAADUAAAAAAAAAAAAkwE0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-27T05:55:33.172Z",
+              "Title": "style.css",
+              "DocumentMoniker": "C:\\Users\\gote\\Documents\\GitHub\\FPing-v2\\src\\public\\launcher\\style.css",
+              "RelativeDocumentMoniker": "src\\public\\launcher\\style.css",
+              "ToolTip": "C:\\Users\\gote\\Documents\\GitHub\\FPing-v2\\src\\public\\launcher\\style.css",
+              "RelativeToolTip": "src\\public\\launcher\\style.css",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAkwGIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-07-27T19:02:32.11Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Microsoft.Common.CurrentVersion.targets",
+              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ViewState": "AgIAAAkVAAAAAAAAAAAUwBEVAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2025-07-29T07:04:40.791Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "script.js",
+              "DocumentMoniker": "C:\\Users\\gote\\Documents\\GitHub\\FPing-v2\\src\\public\\launcher\\script.js",
+              "RelativeDocumentMoniker": "src\\public\\launcher\\script.js",
+              "ToolTip": "C:\\Users\\gote\\Documents\\GitHub\\FPing-v2\\src\\public\\launcher\\script.js",
+              "RelativeToolTip": "src\\public\\launcher\\script.js",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAAAHgAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-07-27T19:02:41.191Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Setup.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\gote\\Documents\\GitHub\\FPing-v2\\src\\Setup.xaml.cs",
+              "RelativeDocumentMoniker": "src\\Setup.xaml.cs",
+              "ToolTip": "C:\\Users\\gote\\Documents\\GitHub\\FPing-v2\\src\\Setup.xaml.cs",
+              "RelativeToolTip": "src\\Setup.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-27T19:25:04.083Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Setup.xaml",
+              "DocumentMoniker": "C:\\Users\\gote\\Documents\\GitHub\\FPing-v2\\src\\Setup.xaml",
+              "RelativeDocumentMoniker": "src\\Setup.xaml",
+              "ToolTip": "C:\\Users\\gote\\Documents\\GitHub\\FPing-v2\\src\\Setup.xaml",
+              "RelativeToolTip": "src\\Setup.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-27T19:57:46.156Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ColorBrightnessConverter.cs",
+              "DocumentMoniker": "C:\\Users\\gote\\Documents\\GitHub\\FPing-v2\\src\\ColorBrightnessConverter.cs",
+              "RelativeDocumentMoniker": "src\\ColorBrightnessConverter.cs",
+              "ToolTip": "C:\\Users\\gote\\Documents\\GitHub\\FPing-v2\\src\\ColorBrightnessConverter.cs",
+              "RelativeToolTip": "src\\ColorBrightnessConverter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-27T19:57:29.476Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FPing-V2",
+              "DocumentMoniker": "C:\\Users\\gote\\Documents\\GitHub\\FPing-v2\\src\\FPing-V2.csproj",
+              "RelativeDocumentMoniker": "src\\FPing-V2.csproj",
+              "ToolTip": "C:\\Users\\gote\\Documents\\GitHub\\FPing-v2\\src\\FPing-V2.csproj",
+              "RelativeToolTip": "src\\FPing-V2.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-07-27T18:59:47.584Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MainWindow.g.cs",
+              "DocumentMoniker": "C:\\Users\\gote\\Documents\\GitHub\\FPing-v2\\src\\obj\\Debug\\net8.0-windows\\MainWindow.g.cs",
+              "RelativeDocumentMoniker": "src\\obj\\Debug\\net8.0-windows\\MainWindow.g.cs",
+              "ToolTip": "C:\\Users\\gote\\Documents\\GitHub\\FPing-v2\\src\\obj\\Debug\\net8.0-windows\\MainWindow.g.cs",
+              "RelativeToolTip": "src\\obj\\Debug\\net8.0-windows\\MainWindow.g.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAwA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-27T16:36:21.435Z"
             }
           ]
         }
