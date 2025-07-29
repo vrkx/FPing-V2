@@ -30,6 +30,7 @@
 * Real-time ping display
 * Checks multiple servers 
 * Lightweight and easy to use
+* WebView2 (Most people have it)
 
 
 
@@ -45,4 +46,3 @@
 - Drag window
 - Discord Game Activity
 - More pfps, custom onew
-* WebView2 (Most people have it)
