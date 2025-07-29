@@ -9,13 +9,12 @@ using System.Windows;
 
 namespace FPing_V2
 {
-    // This class will be exposed to JavaScript.
-    // Methods inside must be marked with [JSExport]
+   
     [ClassInterface(ClassInterfaceType.AutoDual)]
     [ComVisible(true)]
     public class HostController
     {
-        // This C# method will be callable from JavaScript to ping a server.
+    
         [return: MarshalAs(UnmanagedType.FunctionPtr)]
         public async Task<long> PingServer(string address)
         {
@@ -37,7 +36,7 @@ namespace FPing_V2
         {
             try
             {
-                string appName = "MyApp"; // Should match your assembly name
+                string appName = "FPing-V2"; 
                 RegistryKey rk = Registry.CurrentUser.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run", true);
 
                 if (startup)
