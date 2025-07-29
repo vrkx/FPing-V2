@@ -5,6 +5,20 @@
 
 > This is an enhanced version of [FPing](https://github.com/vrkx/FPing/)
 
+<details>
+  
+  <br>
+
+<summary>Showcase</summary>
+
+## Themes
+<img width="2500" height="664" alt="showcase" src="https://github.com/user-attachments/assets/aad5e087-4b67-47d2-9615-45366a6c1cba" />
+
+
+
+
+</details>
+
 ## Features
 
 * Real-time ping display
