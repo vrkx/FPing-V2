@@ -44,5 +44,6 @@
 - Exit, Minimize buttons
 - News
 - Drag window
+- also Show FN Shop 
 - Discord Game Activity
 - More pfps, custom onew
