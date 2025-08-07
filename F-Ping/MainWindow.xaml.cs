@@ -68,7 +68,7 @@ namespace FPing_V2
 
         private async void InitializeWebView()
         {
-            webView.Source = new Uri("https://vrkx.github.io/f-replicate/src/index");
+            webView.Source = new Uri("https://vrkx.github.io/FPing-V2/F-Source/");
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
