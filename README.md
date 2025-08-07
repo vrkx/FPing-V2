@@ -12,8 +12,14 @@
 <summary>Showcase</summary>
 
 ## Themes
-<img width="2500" height="664" alt="showcase" src="https://github.com/user-attachments/assets/aad5e087-4b67-47d2-9615-45366a6c1cba" />
 
+### Dark Theme
+
+<img width="780" height="544" alt="image" src="https://github.com/user-attachments/assets/4bb8d4f2-1a4c-4018-8ecc-636332dd7607" />
+
+### White Theme
+
+<img width="780" height="544" alt="image" src="https://github.com/user-attachments/assets/270ac72e-02c3-4aa1-87c4-c30089c97263" />
 
 
 
@@ -24,6 +30,7 @@
 * Real-time ping display
 * Checks multiple servers 
 * Lightweight and easy to use
+* WebView2 (Most people have it)
 
 
 
@@ -31,4 +38,12 @@
 
 * [Net 8.0](https://dotnet.microsoft.com/en-us/download/dotnet/8.0)
 * Windows 10-11
-* WebView2 (Most people have it)
+
+## TO-DO
+
+- Exit, Minimize buttons
+- News
+- Drag window
+- also Show FN Shop 
+- Discord Game Activity
+- More pfps, custom onew
