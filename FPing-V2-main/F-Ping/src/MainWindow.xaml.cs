@@ -1,11 +1,15 @@
-﻿using Microsoft.Web.WebView2.Core;
+﻿using FPing_V2.F_Source;
+using Microsoft.Web.WebView2.Core;
+using Microsoft.Web.WebView2.Core;
 using Microsoft.Win32; // Needed for Registry (Start with Windows)
 using System;
+using System.IO;
 using System.IO;
 using System.Net.NetworkInformation; // Needed for Ping
 using System.Runtime.InteropServices; // Needed for Host Object
 using System.Threading.Tasks;       // Needed for Task
 using System.Windows;
+using System.Windows.Controls;
 
 namespace FPing_V2
 {
@@ -58,18 +62,59 @@ namespace FPing_V2
     }
 
 
-    public partial class MainWindow : Window
+
+public partial class MainWindow : Window
     {
+
+        private PingService _pingService;
+        private CoreWebView2 _webView2;
+
         public MainWindow()
         {
             InitializeComponent();
-            InitializeWebView();
+            InitializeAsync();
+         
+            _pingService = new PingService();
+            webView.CoreWebView2InitializationCompleted += OnCoreWebView2InitializationCompleted;
+        }
+
+
+        private async Task InitializeAsync()
+        {
+            var options = new CoreWebView2EnvironmentOptions("--allow-file-access-from-files");
+
+            // Create the environment with the options
+            var environment = await CoreWebView2Environment.CreateAsync(null, null, options);
+
+            // Ensure CoreWebView2 with the created environment
+            await webView.EnsureCoreWebView2Async(environment);  
+        }
+
+        private async void  OnCoreWebView2InitializationCompleted(object sender, CoreWebView2InitializationCompletedEventArgs e)
+        {
+            if (e.IsSuccess)
+            {
+                _webView2 = webView.CoreWebView2;
+
+
+                webView.CoreWebView2.AddHostObjectToScript("controller", new HostController());
+                _webView2.AddHostObjectToScript("pingService", _pingService);
+
+                webView.Source = new Uri ( "https://vrkx.github.io/FPing-V2/F-Source/");
+
+            }
+            else
+            {
+                MessageBox.Show("WebView2 initialization failed.");
+            }
         }
 
         private async void InitializeWebView()
         {
             webView.Source = new Uri("https://vrkx.github.io/FPing-V2/F-Source/");
+            webView.CoreWebView2.AddHostObjectToScript("controller", new HostController());
         }
+
 
         private void CloseButton_Click(object sender, RoutedEventArgs e)
         {
@@ -78,7 +123,10 @@ namespace FPing_V2
 
         private void MinimizeButton_Click(object sender, RoutedEventArgs e)
         {
-          
+
         }
+
     }
-}
+    }
+
+

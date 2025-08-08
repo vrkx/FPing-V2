@@ -7,12 +7,15 @@
       "RelativeMoniker": "D:0:0:{AF3F2C08-A80D-BBC6-D210-03C9C0A6CA12}|src\\FPing-V2.csproj|solutionrelative:src\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AF3F2C08-A80D-BBC6-D210-03C9C0A6CA12}|src\\FPing-V2.csproj|c:\\users\\gote\\documents\\github\\fping-v2\\fping-v2-main\\f-ping\\src\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{AF3F2C08-A80D-BBC6-D210-03C9C0A6CA12}|src\\FPing-V2.csproj|solutionrelative:src\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{AF3F2C08-A80D-BBC6-D210-03C9C0A6CA12}|src\\FPing-V2.csproj|c:\\users\\gote\\documents\\github\\fping-v2\\fping-v2-main\\f-ping\\src\\fping-v2.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{AF3F2C08-A80D-BBC6-D210-03C9C0A6CA12}|src\\FPing-V2.csproj|solutionrelative:src\\fping-v2.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AF3F2C08-A80D-BBC6-D210-03C9C0A6CA12}|src\\FPing-V2.csproj|c:\\users\\gote\\documents\\github\\fping-v2\\fping-v2-main\\f-ping\\src\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{AF3F2C08-A80D-BBC6-D210-03C9C0A6CA12}|src\\FPing-V2.csproj|solutionrelative:src\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\dotnet\\sdk\\9.0.302\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.Sdk.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF3F2C08-A80D-BBC6-D210-03C9C0A6CA12}|src\\FPing-V2.csproj|c:\\users\\gote\\documents\\github\\fping-v2\\fping-v2-main\\f-ping\\src\\f-source\\pingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF3F2C08-A80D-BBC6-D210-03C9C0A6CA12}|src\\FPing-V2.csproj|solutionrelative:src\\f-source\\pingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,8 +25,33 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FPing-V2",
+              "DocumentMoniker": "C:\\Users\\gote\\Documents\\GitHub\\FPing-v2\\FPing-V2-main\\F-Ping\\src\\FPing-V2.csproj",
+              "RelativeDocumentMoniker": "src\\FPing-V2.csproj",
+              "ToolTip": "C:\\Users\\gote\\Documents\\GitHub\\FPing-v2\\FPing-V2-main\\F-Ping\\src\\FPing-V2.csproj",
+              "RelativeToolTip": "src\\FPing-V2.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-08-08T17:17:58.2Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PingService.cs",
+              "DocumentMoniker": "C:\\Users\\gote\\Documents\\GitHub\\FPing-v2\\FPing-V2-main\\F-Ping\\src\\F-Source\\PingService.cs",
+              "RelativeDocumentMoniker": "src\\F-Source\\PingService.cs",
+              "ToolTip": "C:\\Users\\gote\\Documents\\GitHub\\FPing-v2\\FPing-V2-main\\F-Ping\\src\\F-Source\\PingService.cs",
+              "RelativeToolTip": "src\\F-Source\\PingService.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAuwDoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-08T03:30:50.934Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -32,33 +60,22 @@
               "RelativeDocumentMoniker": "src\\MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\gote\\Documents\\GitHub\\FPing-v2\\FPing-V2-main\\F-Ping\\src\\MainWindow.xaml.cs",
               "RelativeToolTip": "src\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAD4AAAAAAAAAAAAwwEYAAABKAAAAAAAAAA==",
+              "ViewState": "AgIAAEEAAAAAAAAAAAA9wEoAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-08T00:20:12.187Z",
+              "WhenOpened": "2025-08-08T03:09:13.91Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "App.xaml",
-              "DocumentMoniker": "C:\\Users\\gote\\Documents\\GitHub\\FPing-v2\\FPing-V2-main\\F-Ping\\src\\App.xaml",
-              "RelativeDocumentMoniker": "src\\App.xaml",
-              "ToolTip": "C:\\Users\\gote\\Documents\\GitHub\\FPing-v2\\FPing-V2-main\\F-Ping\\src\\App.xaml",
-              "RelativeToolTip": "src\\App.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-08-08T00:12:49.788Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\gote\\Documents\\GitHub\\FPing-v2\\FPing-V2-main\\F-Ping\\src\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "src\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\gote\\Documents\\GitHub\\FPing-v2\\FPing-V2-main\\F-Ping\\src\\MainWindow.xaml",
-              "RelativeToolTip": "src\\MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-08-08T00:11:50.076Z",
+              "Title": "Microsoft.NET.Sdk.targets",
+              "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\9.0.302\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.Sdk.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\9.0.302\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.Sdk.targets",
+              "ToolTip": "C:\\Program Files\\dotnet\\sdk\\9.0.302\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.Sdk.targets",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\9.0.302\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.Sdk.targets",
+              "ViewState": "AgIAAPgEAAAAAAAAAAAwwAcFAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2025-08-08T17:18:37.956Z",
               "EditorCaption": ""
             }
           ]

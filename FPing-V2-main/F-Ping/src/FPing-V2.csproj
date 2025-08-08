@@ -1,5 +1,10 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
+  <PropertyGroup Label="Globals">
+    <WebView2DispatchAdapterUseJavaScriptCase>False</WebView2DispatchAdapterUseJavaScriptCase>
+    <WV2WinRTRequireAllowForWebAttribute>True</WV2WinRTRequireAllowForWebAttribute>
+  </PropertyGroup>
+
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net8.0-windows</TargetFramework>
@@ -7,6 +12,7 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UseWPF>true</UseWPF>
+    <UseWindowsForms>False</UseWindowsForms>
   </PropertyGroup>
 
   <ItemGroup>
@@ -14,6 +20,108 @@
     <EmbeddedResource Remove="public\**" />
     <None Remove="public\**" />
     <Page Remove="public\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="F-Source\data\en.json" />
+    <None Remove="F-Source\data\es.json" />
+    <None Remove="F-Source\data\news.json" />
+    <None Remove="F-Source\data\servers.json" />
+    <None Remove="F-Source\imgs\icons\arror.png" />
+    <None Remove="F-Source\imgs\icons\continue.png" />
+    <None Remove="F-Source\imgs\icons\cry.png" />
+    <None Remove="F-Source\imgs\icons\home.png" />
+    <None Remove="F-Source\imgs\icons\LoadingBar.png" />
+    <None Remove="F-Source\imgs\icons\save.png" />
+    <None Remove="F-Source\imgs\icons\settings.png" />
+    <None Remove="F-Source\imgs\icons\shop.png" />
+    <None Remove="F-Source\imgs\icons\theme.png" />
+    <None Remove="F-Source\imgs\icons\user.png" />
+    <None Remove="F-Source\imgs\icons\vur.png" />
+    <None Remove="F-Source\imgs\icons\wif.png" />
+    <None Remove="F-Source\imgs\icons\wiput.png" />
+    <None Remove="F-Source\imgs\logo.png" />
+    <None Remove="F-Source\imgs\Ramirez.png" />
+    <None Remove="F-Source\index.html" />
+    <None Remove="F-Source\main.js" />
+    <None Remove="F-Source\shop.js" />
+    <None Remove="F-Source\status.js" />
+    <None Remove="F-Source\style.css" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="F-Source\data\en.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="F-Source\data\es.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="F-Source\data\news.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="F-Source\data\servers.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="F-Source\imgs\icons\arror.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="F-Source\imgs\icons\continue.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="F-Source\imgs\icons\cry.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="F-Source\imgs\icons\home.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="F-Source\imgs\icons\LoadingBar.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="F-Source\imgs\icons\save.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="F-Source\imgs\icons\settings.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="F-Source\imgs\icons\shop.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="F-Source\imgs\icons\theme.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="F-Source\imgs\icons\user.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="F-Source\imgs\icons\vur.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="F-Source\imgs\icons\wif.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="F-Source\imgs\icons\wiput.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="F-Source\imgs\logo.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="F-Source\imgs\Ramirez.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="F-Source\index.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="F-Source\main.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="F-Source\shop.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="F-Source\status.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="F-Source\style.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
   <ItemGroup>
@@ -25,6 +133,9 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <AutoGen>True</AutoGen>
       <DependentUpon>Data.settings</DependentUpon>
+    </Compile>
+    <Compile Update="F-Source\PingService.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
   </ItemGroup>
 
