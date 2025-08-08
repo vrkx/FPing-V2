@@ -134,11 +134,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gote\\Documents\\GitHub\\FPing-v2\\FPing-V2-main\\F-Ping\\src\\FPing-V2.csproj",
+      "projectUniqueName": "C:\\Users\\gote\\Documents\\GitHub\\FPing-v2\\F-Ping\\src\\FPing-V2.csproj",
       "projectName": "FPing-V2",
-      "projectPath": "C:\\Users\\gote\\Documents\\GitHub\\FPing-v2\\FPing-V2-main\\F-Ping\\src\\FPing-V2.csproj",
+      "projectPath": "C:\\Users\\gote\\Documents\\GitHub\\FPing-v2\\F-Ping\\src\\FPing-V2.csproj",
       "packagesPath": "C:\\Users\\gote\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gote\\Documents\\GitHub\\FPing-v2\\FPing-V2-main\\F-Ping\\src\\obj\\",
+      "outputPath": "C:\\Users\\gote\\Documents\\GitHub\\FPing-v2\\F-Ping\\src\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\gote\\AppData\\Roaming\\NuGet\\NuGet.Config",

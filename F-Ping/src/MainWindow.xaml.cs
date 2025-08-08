@@ -1,4 +1,4 @@
-﻿using FPing_V2.F_Source;
+﻿
 using Microsoft.Web.WebView2.Core;
 using Microsoft.Web.WebView2.Core;
 using Microsoft.Win32; // Needed for Registry (Start with Windows)
@@ -66,15 +66,14 @@ namespace FPing_V2
 public partial class MainWindow : Window
     {
 
-        private PingService _pingService;
+   
         private CoreWebView2 _webView2;
 
         public MainWindow()
         {
             InitializeComponent();
             InitializeAsync();
-         
-            _pingService = new PingService();
+     
             webView.CoreWebView2InitializationCompleted += OnCoreWebView2InitializationCompleted;
         }
 
@@ -98,8 +97,7 @@ public partial class MainWindow : Window
 
 
                 webView.CoreWebView2.AddHostObjectToScript("controller", new HostController());
-                _webView2.AddHostObjectToScript("pingService", _pingService);
-
+     
                 webView.Source = new Uri ( "https://vrkx.github.io/FPing-V2/F-Source/");
 
             }
