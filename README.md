@@ -30,20 +30,20 @@
 * Real-time ping display
 * Checks multiple servers 
 * Lightweight and easy to use
-* WebView2 (Most people have it)
+* Display Fortnite Shop
 
 
-
-## Requirements
+## ⚙ Requirements
 
 * [Net 8.0](https://dotnet.microsoft.com/en-us/download/dotnet/8.0)
 * Windows 10-11
+* [WebView2 (Most people have it)](https://developer.microsoft.com/en-us/Microsoft-edge/webview2/?form=MA13LH&ch=1)
 
-## TO-DO
+## 📃 TO-DO
 
-- Exit, Minimize buttons
-- News
-- Drag window
-- also Show FN Shop 
-- Discord Game Activity
-- More pfps, custom onew
+- [X] Exit, Minimize buttons
+- [ ] News
+- [ ] Drag window
+- [X] Show Fortnite Item Shop 
+- [ ] Discord Game Activity
+- [ ] More pfps, custom ones- 
