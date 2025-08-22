@@ -68,6 +68,8 @@ public partial class MainWindow : Window
 
    
         private CoreWebView2 _webView2;
+        string _Uri = "http://127.0.0.1:5500/index.html";
+
 
         public MainWindow()
         {
@@ -97,8 +99,17 @@ public partial class MainWindow : Window
 
 
                 webView.CoreWebView2.AddHostObjectToScript("controller", new HostController());
-     
-                webView.Source = new Uri ( "https://vrkx.github.io/FPing-V2/F-Source/");
+
+                // a few configs so the app feels more real
+
+                webView.CoreWebView2.Settings.AreDefaultContextMenusEnabled = false;
+                webView.CoreWebView2.Settings.IsPinchZoomEnabled = false;
+                webView.CoreWebView2.Settings.AreBrowserAcceleratorKeysEnabled = false;
+                webView.CoreWebView2.Settings.IsZoomControlEnabled = false;
+
+
+
+                webView.Source = new Uri (_Uri);
 
             }
             else
@@ -107,11 +118,6 @@ public partial class MainWindow : Window
             }
         }
 
-        private async void InitializeWebView()
-        {
-            webView.Source = new Uri("https://vrkx.github.io/FPing-V2/F-Source/");
-            webView.CoreWebView2.AddHostObjectToScript("controller", new HostController());
-        }
 
 
         private void CloseButton_Click(object sender, RoutedEventArgs e)

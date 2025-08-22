@@ -2,18 +2,24 @@
  
     {
     "title": "V2 is Here!",
-    "content": "This is a big update that contains a lot of enhancements for the app, and also a lot of rework for the internal code!",
+    "content": "This launcher contains an updated design and a bunch of new features that improves the user experience, and a lot of internal changes that makes it better than V1",
     "icon": "wifi",
-    "color" : "#00ff15",
-    "height" : "100px"
+
+    "color" : "#39b620",
+    "bcolor" : "#39b640",
+    "bbcolor" : "#9bff71",
+    "height" : "150px"
     
   },
 
     {
-    "title": "Update!",
-    "content": "Theres a new shop tab, among another new features on the launcher and internal code!",
-    "icon": "",
+    "title": "Improvements on the Launcher",
+    "content": "Launcher has been improved with a UI Changes, and also a lot of new features have been added to it, like the new notification system, and the new shop & status system.",
+    "icon": "lan",
+
     "color" : "#505090",
-    "height" : "100px"
+    "bcolor" : "#0087ff",
+    "bbcolor" : "#51629d",
+    "height" : "200px"
   }
 ]
