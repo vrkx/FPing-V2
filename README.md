@@ -43,6 +43,8 @@
 
 - [X] Exit, Minimize buttons
 - [ ] News
+- [X] Compact Sidebar
+- [X] UI Changes
 - [ ] Drag window
 - [X] Show Fortnite Item Shop 
 - [ ] Discord Game Activity
