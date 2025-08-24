@@ -1,3 +1,4 @@
+
   async function getFortniteStatus() {
         const statusList = document.getElementById('status-container');
         const epicStatusApiUrl = 'https://status.epicgames.com/api/v2/summary.json';
@@ -57,11 +58,12 @@
         }
     }
 
-    document.addEventListener("DOMContentLoaded", () => {
-       
+ 
         getFortniteStatus();
-    });
+        
 
 
+    
 
-    setInterval(getFortniteStatus, 60000);
+export default getFortniteStatus;
+

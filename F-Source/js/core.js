@@ -1,13 +1,22 @@
-﻿document.addEventListener('DOMContentLoaded', () => {
+import  pingAllServers  from './Fortnite/Servers/servers.js';
+import  startPingInterval  from './Fortnite/Servers/ping.js';
+import  getFortniteStatus  from './Fortnite/Status/status.js';
+import  initializeShop  from './Fortnite/Shop/shop.js';
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    
+    
+    
+    
     // --- APP STATE & CONFIG ---
     let appSettings = {};
     let translations = {};
     let pingIntervalId = null;
-
-    // --- APP VERSION --- ( ngl i don't even know what the app version is )
-    const appVersion = '2.0.0';
+    const appVersion = '2.0.1';
   
-    // --- COMP ICONS --- 
+    // ICONS
 
     const ICONS = {
         home: '<img src="./imgs/icons/home.png">',
@@ -18,9 +27,8 @@
         wifi:   '<img src="./imgs/icons/wif50.png">',
     };
 
-    // --- DOM ELEMENTS ---
+    // HTML elements
     const mainAppScreen = document.getElementById('main-app-screen');
-      const NetworkScreen = document.getElementById('NetworkError');
     const setupModal = document.getElementById('setup-screen-modal');
     const finishSetupBtn = document.getElementById('finish-setup-btn');
     const sidebarProfileName = document.getElementById('sidebar-username');
@@ -37,7 +45,10 @@
     const refreshPingsBtn = document.getElementById('refresh-pings-btn');
     const pingIntervalSelect = document.getElementById('ping-interval-select');
 
-    // --- SETTINGS MANAGEMENT ---
+   // Settings
+
+    /// Load
+
     function loadSettings() {
         const settings = JSON.parse(localStorage.getItem('appSettings')) || {};
         appSettings = {
@@ -49,9 +60,12 @@
         };
     }
 
+    /// Save
+
     function saveSettings() {
         localStorage.setItem('appSettings', JSON.stringify(appSettings));
     }
+
 
     // --- INITIALIZATION ---
     async function initialize() {
@@ -66,7 +80,8 @@
             document.getElementById('VApp').innerText = `Version: ${appVersion}`;
 
             fetchNews();
-            
+            getFortniteStatus();
+            initializeShop();
             pingAllServers();
             startPingInterval();
         } else {
@@ -79,11 +94,7 @@
         addNavEventListeners();
     }
     
-
-    // --- UI UPDATES ---
-
-
-    
+    /// UI Building & Updating
 
     function updateUIFromSettings() {
         document.documentElement.setAttribute('data-theme', appSettings.theme);
@@ -130,6 +141,9 @@
         }
     }
     
+    /// Building Sidebar & functionality
+
+
     function buildSidebar() {
         document.querySelector('.sidebar ul').innerHTML = `
             <li><a href="#" class="nav-link active" data-page="home">${ICONS.home}<span data-i18n="home">${translations.home || 'Home'}</span></a></li>
@@ -140,55 +154,9 @@
         addNavEventListeners();
     }
 
-    // --- DATA & CORE FUNCTIONALITY ---
-    async function pingAllServers() {
-        const response = await fetch('./data/servers.json');
-        const servers = await response.json();
-        if (serverListContainer.innerHTML === '') { // First time loading
-             servers.forEach(server => {
-                 serverListContainer.innerHTML += `
-                    <div class="server-item" id="server-${server.Name}">
-                    
-                        <span>${server.Name}</span>
-                        
-                        <span style="font-size: 14px;">${server.ServerAddress}</span>
-                        <div class="server-item-info">
-                            <div class="ping-spinner"></div>
-                            <span class="ping"></span>
-                        </div>
-                    </div>`;
-             });
-        }
-        
-        servers.forEach(server => {
-            const serverElement = document.getElementById(`server-${server.Name}`);
-            const pingElement = serverElement.querySelector('.ping');
-            const spinnerElement = serverElement.querySelector('.ping-spinner');
-            spinnerElement.style.display = 'block';
-            pingElement.textContent = '';
-
-            window.chrome.webview.hostObjects.controller.PingServer(server.ServerAddress).then(ping => {
-                spinnerElement.style.display = 'none';
-                if (ping >= 0) {
-                    pingElement.textContent = `${ping} ms`;
-                    pingElement.className = 'ping';
-                    if (ping < 50) pingElement.classList.add('good');
-                    else if (ping < 100) pingElement.classList.add('medium');
-                    else pingElement.classList.add('bad');
-                } else {
-                    pingElement.textContent = 'Error';
-                    pingElement.className = 'ping error';
-                }
-            });
-        });
-    }
-
-    function startPingInterval() {
-        if (pingIntervalId) clearInterval(pingIntervalId);
-        if (appSettings.pingInterval > 0) {
-            pingIntervalId = setInterval(pingAllServers, appSettings.pingInterval);
-        }
-    }
+    // Server Pinging 
+    
+  
 
     async function fetchNews() {
         try {
@@ -210,7 +178,7 @@
 
     async function loadLanguage(lang) {
         try {
-            const response = await fetch(`./data/${lang}.json`);
+            const response = await fetch(`./data/lang/${lang}.json`);
             translations = await response.json();
             appSettings.language = lang;
             buildSidebar();

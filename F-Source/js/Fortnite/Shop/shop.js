@@ -1,19 +1,18 @@
-document.addEventListener('DOMContentLoaded', () => {
-    // --- DOM Elements ---
+
+    // HTML elements
     const shopContainer = document.getElementById('shop-container');
     const searchBar = document.getElementById('search-bar');
     const typeFilter = document.getElementById('type-filter');
     const rarityFilter = document.getElementById('rarity-filter');
     const sortFilter = document.getElementById('sort-filter');
 
-    // --- API Configuration ---
 
 
-    const apiKey = fetch('./data/api.json')
+    const apiKey = fetch('./data/api.json').response
     const apiUrl = 'https://fortniteapi.io/v2/shop?lang=en';
 
     // --- State ---
-    let allShopItems = []; // To store the original full list of items
+    let allShopItems = []; 
 
     // --- Initialization ---
     async function initializeShop() {
@@ -42,38 +41,31 @@ document.addEventListener('DOMContentLoaded', () => {
         return response.json();
     }
 
-    // --- Core Logic: Filtering, Sorting, and Rendering ---
-
-    /**
-     * This is the main function that applies all active filters and sorting,
-     * then re-renders the shop display.
-     */
+ 
     function applyFiltersAndRender() {
-        // 1. Get current filter values
+     
         const searchText = searchBar.value.toLowerCase().trim();
         const selectedType = typeFilter.value;
         const selectedRarity = rarityFilter.value;
         const selectedSort = sortFilter.value;
 
-        // 2. Apply filters to the original item list
         let filteredItems = [...allShopItems];
 
-        // Search filter
         if (searchText) {
             filteredItems = filteredItems.filter(item =>
                 item.displayName.toLowerCase().includes(searchText)
             );
         }
-        // Type filter
+     
         if (selectedType !== 'all') {
             filteredItems = filteredItems.filter(item => item.mainType === selectedType);
         }
-        // Rarity filter
+   
         if (selectedRarity !== 'all') {
             filteredItems = filteredItems.filter(item => item.rarity?.id.toLowerCase() === selectedRarity);
         }
 
-        // 3. Apply sorting
+
         sortItems(filteredItems, selectedSort);
 
         // 4. Group the final list of items and render them
@@ -82,9 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
         updateCategoryVisibility();
     }
 
-    /**
-     * Sets up event listeners for all filter controls.
-     */
+
     function setupFilters() {
         const controls = [searchBar, typeFilter, rarityFilter, sortFilter];
         controls.forEach(control => {
@@ -92,9 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    /**
-     * Groups items based on their in-game shop section (e.g., "Featured", "Daily").
-     */
+
     function groupShopItems(shopItems) {
         const grouped = {};
         shopItems.forEach(item => {
@@ -253,5 +241,10 @@ function createItemCard(item) {
     }
 
     // --- Start the Application ---
-    initializeShop();
+
+
+document.addEventListener('DOMContentLoaded', () => {
+        initializeShop();
 });
+
+export default initializeShop;
