@@ -1,5 +1,5 @@
 
-import refresh from '/js/core.js';
+import refresh from './js/core.js';
 
 
 document.addEventListener('DOMContentLoaded', () => {
