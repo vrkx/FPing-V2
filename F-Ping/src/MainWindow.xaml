@@ -6,7 +6,8 @@
         xmlns:local="clr-namespace:FPing_V2" 
         xmlns:wv2="clr-namespace:Microsoft.Web.WebView2.Wpf;assembly=Microsoft.Web.WebView2.Wpf"
         mc:Ignorable="d"
-        Title="FPing Launcher" Height="539" Width="780"
+        WindowStartupLocation="CenterScreen"
+        Title="FPing Launcher" Height="540" Width="780"
         WindowStyle="None" AllowsTransparency="True" Background="Transparent">
 
     <Grid>

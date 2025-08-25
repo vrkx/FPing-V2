@@ -6,7 +6,7 @@
     const rarityFilter = document.getElementById('rarity-filter');
     const sortFilter = document.getElementById('sort-filter');
 
-eeeee
+
     // --- State ---
     let allShopItems = []; 
 

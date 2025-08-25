@@ -12,6 +12,7 @@ using System.Text;
 using System.Threading.Tasks;       // Needed for Task
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Input;
 
 namespace FPing_V2
 {
@@ -101,11 +102,22 @@ public partial class MainWindow : Window
         {
             InitializeComponent();
             InitializeAsync();
-     
+
+            this.MouseDown += new MouseButtonEventHandler(Window_MouseDown);
             webView.CoreWebView2InitializationCompleted += OnCoreWebView2InitializationCompleted;
         }
 
 
+
+        private void Window_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            // Check if the left mouse button was clicked
+            if (e.LeftButton == MouseButtonState.Pressed)
+            {
+                // This built-in WPF method allows the window to be dragged
+                this.DragMove();
+            }
+        }
         private async Task InitializeAsync()
         {
 
