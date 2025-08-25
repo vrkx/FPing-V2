@@ -27,9 +27,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="node\host.js">
+    <EmbeddedResource Include="node\host.js">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Resource>
+    </EmbeddedResource>
   </ItemGroup>
 
   <ItemGroup>

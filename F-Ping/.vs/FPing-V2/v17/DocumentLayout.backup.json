@@ -29,9 +29,9 @@
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\gote\\Documents\\GitHub\\FPing-v2\\F-Ping\\src\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "src\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\gote\\Documents\\GitHub\\FPing-v2\\F-Ping\\src\\MainWindow.xaml.cs*",
-              "RelativeToolTip": "src\\MainWindow.xaml.cs*",
-              "ViewState": "AgIAAFAAAAAAAAAAAAAiwGIAAABfAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\gote\\Documents\\GitHub\\FPing-v2\\F-Ping\\src\\MainWindow.xaml.cs",
+              "RelativeToolTip": "src\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABMAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-08T18:16:12.946Z",
               "EditorCaption": ""
@@ -45,8 +45,7 @@
               "ToolTip": "C:\\Users\\gote\\Documents\\GitHub\\FPing-v2\\F-Ping\\src\\MainWindow.xaml",
               "RelativeToolTip": "src\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-08-08T18:16:08.777Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-08T18:16:08.777Z"
             },
             {
               "$type": "Document",

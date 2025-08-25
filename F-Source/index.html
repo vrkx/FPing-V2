@@ -20,8 +20,8 @@
     
 
 
-        <nav class="sidebar">
-            <img style="margin-left: 20px;" src="./imgs/logo.png" alt="Logo">
+        <nav class="sidebar" id="sidebar">
+            <img id="logoo" style="margin-left: 20px;" src="./imgs/logo.png" alt="Logo">
 
             <ul>
                 <li>
@@ -50,18 +50,23 @@
                 </li>
             </ul>
             
-             <div style="border-radius: 10px;  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); border: 1.5px solid #202025;    padding: 10px;   margin-top: 225px; margin-bottom: 4px;   flex-direction: row; display: flex ;  background: #101015; justify-content: center;">
-                <span>Fortnite Server Status :</span>
-                <div id="status-indicator"></div>
+             <div id="thidk" style="border-radius: 10px;  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); border: 1.5px solid #ffffff1a;    padding: 10px;   margin-top: 105px; margin-bottom: 4px;   flex-direction: row; display: flex ;  background: #1010108a; justify-content: center;">
+                <span id="fnstatusspn" style="font-family: SF-Font;">FNStatus :</span>
+                <div id="general-status" style="width: 24px; height: 24px; border-radius: 100px;"></div>
             </div>
 
-            <div class="sidebar-profile">
-                <img src="./imgs/Ramirez.png" alt="Profile" class="profile-pic">
+            <div id="sidepro" class="sidebar-profile">
+              <div style=" overflow: hidden; display: flex; align-items: center; justify-content: flex-start; align-content: center; flex-direction: row;">
+                <img src="./imgs/Ramirez.png" alt="Profile" id="userpfp" class="profile-pic">
                 <span id="sidebar-username">Username</span>
+               </div>
+              
             </div>
         </nav>
 
         <main class="content">
+
+            
 
 
                 <div class="pageheader" style="padding: 10px;">
@@ -74,6 +79,12 @@
 
             <div id="home-page" style="margin: 10px;" class="page-content active">
 
+
+                <div class="background-home">
+
+                    <img id="homebck" >
+
+                </div>
           
                 <header class="welcome-header">
                     <h1 data-i18n="welcome_message">Greetings!</h1>
@@ -153,32 +164,27 @@
             <div id="settings-page" style="margin: 10px;" class="page-content">
                 
                 <div class="settings-grid">
+                   
                     <div class="setting-card">
-                        <h3 data-i18n="theme_settings">Theme Settings</h3>
-                        <div class="theme-swatch-container">
-                            <div class="theme-swatch" data-theme="dark">
-                                <div class="c1"></div><div class="c2"></div><div class="c3"></div><div class="c4"></div>
-                                <span style="color: #fff;">Dark</span>
-                            </div>
-                            <div class="theme-swatch" data-theme="light">
-                                <div class="c1"></div><div class="c2"></div><div class="c3"></div><div class="c4"></div>
-                                <span style="color: #101015;" >Light</span>
-                            </div>
+                        <div style="    display: flex
+;
+    align-items: center;
+    justify-content: flex-start;
+    align-content: center;
+    flex-direction: row;
+">
+                            
+                            <img style="filter: invert(); margin-bottom: 15px;" src="https://img.icons8.com/ios-filled/25/gender-neutral-user.png"> 
+                                                    <h3 data-i18n="Profile"> Profile</h3>
                         </div>
-                    </div>
-                    <div class="setting-card">
-                        <h3 data-i18n="Profile">Profile</h3>
+
                         <div class="sidebar-profile">
-                            <img src="./imgs/Ramirez.png" alt="Profile" class="profile-pic">
+                            <img src="./imgs/Ramirez.png" alt="Profile" id="prfo" class="profile-pic">
                             <span style="color: wheat;" id="UserSName">Username</span>
                         </div>
                        
                     </div>
-                    <div class="setting-card">
-                        <h3 data-i18n="change_username">Change Username</h3>
-                        <input type="text" id="username-settings-input" placeholder="New username">
-                        <button id="save-username-btn" onclick="showNotification('success', 'Success!', 'Your profile has been updated successfully.')" class="button-primary" data-i18n="save_username">Save Username</button>
-                    </div>
+               
                     <div class="setting-card">
                         <h3 data-i18n="language">Language</h3>
                         <select id="language-select">
@@ -186,6 +192,15 @@
                             <option value="es">Español</option>
                         </select>
                     </div>
+
+                    <div class="setting-card">
+                        <h3 data-i18n="icons">Sidebar</h3>
+                        <select id="icons-select">
+                            <option value="cla">Classic</option>
+                            <option value="com">Compact</option>
+                        </select>
+                    </div>
+
                     <div class="setting-card">
                         <h3>Ping Refresh Interval</h3>
                         <select id="ping-interval-select">
@@ -205,7 +220,7 @@
                     <div class="setting-card">
                         <h3 data-i18n="about_app">About App</h3>
                         <p id="VApp" data-i18n="app_version"></p>
-                        <button id="reset-app-btn" class="button-danger">Clear App Data & Restart</button>
+                        <button id="reset-app-btn" class="button-danger">Logout</button>
                     </div>
                 </div>
             </div>
@@ -221,25 +236,18 @@
     
         </main> </div> <div id="setup-screen-modal" class="modal-backdrop" style="display: none;">
         <div class="setup-container">
-            <h2>Welcome! Let's get set up.</h2>
+            <h2>Welcome to FPing!</h2>
             <div class="setup-step">
-                <h3>1. Enter your username</h3>
-                <input type="text" id="username-input" placeholder="Username">
+                <h3 style="margin: 10px; margin-left: 65px;">Please log in to continue.</h3>
+                
             </div>
             <div class="setup-step">
-                <h3>2. Choose a theme</h3>
-                <div class="theme-swatch-container">
-                    <div class="theme-swatch" data-theme="dark">
-                        <div class="c1"></div><div class="c2"></div><div class="c3"></div><div class="c4"></div>
-                        <span>Dark</span>
-                    </div>
-                    <div class="theme-swatch" data-theme="light">
-                        <div class="c1"></div><div class="c2"></div><div class="c3"></div><div class="c4"></div>
-                        <span>Light</span>
-                    </div>
-                </div>
+                
+
+<a id="discord-login-btn" href="#" style=" background-color: #004090; display: flex; align-items: center; justify-content: center; font-weight: bold; font-family: SF-Font;">    <img src="https://img.icons8.com/ios-filled/20/discord-logo.png" Login with Discord</a>
             </div>
-            <button id="finish-setup-btn" class="button-primary">Finish Setup</button>
+        
+            
         </div>
     </div>
 
@@ -250,6 +258,7 @@
 <script>
        
     </script>
+    <script type="module" src="./js/Discord/login.js"></script>
     <script type="module" src="./js/core.js"></script>
 
 

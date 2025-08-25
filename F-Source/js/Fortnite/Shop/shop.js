@@ -6,22 +6,16 @@
     const rarityFilter = document.getElementById('rarity-filter');
     const sortFilter = document.getElementById('sort-filter');
 
-
-
-    const apiKey = fetch('./data/api.json').response
-    const apiUrl = 'https://fortniteapi.io/v2/shop?lang=en';
-
+eeeee
     // --- State ---
     let allShopItems = []; 
 
     // --- Initialization ---
     async function initializeShop() {
-        if (apiKey === 'YOUR_API_KEY_HERE') {
-            displayError('An internal error occurred');
-            return;
-        }
+        
         try {
             const shopData = await fetchShopData();
+  
             allShopItems = shopData.shop; // Store all items
             setupFilters();
             applyFiltersAndRender(); // Initial render
@@ -32,14 +26,27 @@
     }
 
     // --- Data Fetching ---
+  
+
     async function fetchShopData() {
-        const response = await fetch(apiUrl, {
-            headers: { 'Authorization': apiKey }
-        });
-        if (response.status === 401) throw new Error('Unauthorized: Your API key is likely invalid or expired.');
-        if (!response.ok) throw new Error(`Network error: Could not fetch data (Status: ${response.status})`);
-        return response.json();
+    try {
+        // api call to backend
+        const response = await fetch('https://fpingbackend.vercel.app/api/shop'); // your backend/api url
+
+        if (!response.ok) {
+            throw new Error('Failed to fetch shop data from the backend.');
+        }
+
+        const data = await response.json();
+        console.log('Shop data:', data);
+        return data;
+    } catch (error) {
+        console.error('Error:', error);
     }
+}
+
+// Call the function to get the data when needed
+
 
  
     function applyFiltersAndRender() {

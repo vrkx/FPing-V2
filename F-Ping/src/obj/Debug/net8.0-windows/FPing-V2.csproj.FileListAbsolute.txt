@@ -91,3 +91,4 @@ C:\Users\gote\Documents\GitHub\FPing-v2\F-Ping\src\obj\Debug\net8.0-windows\refi
 C:\Users\gote\Documents\GitHub\FPing-v2\F-Ping\src\obj\Debug\net8.0-windows\FPing-V2.pdb
 C:\Users\gote\Documents\GitHub\FPing-v2\F-Ping\src\obj\Debug\net8.0-windows\FPing-V2.genruntimeconfig.cache
 C:\Users\gote\Documents\GitHub\FPing-v2\F-Ping\src\obj\Debug\net8.0-windows\ref\FPing-V2.dll
+C:\Users\gote\Documents\GitHub\FPing-v2\F-Ping\src\bin\Debug\net8.0-windows\node\host.js

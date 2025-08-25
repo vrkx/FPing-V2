@@ -4,17 +4,15 @@ import  getFortniteStatus  from './Fortnite/Status/status.js';
 import  initializeShop  from './Fortnite/Shop/shop.js';
 
 
-
-document.addEventListener('DOMContentLoaded', () => {
     
     
-    
+       
     
     // --- APP STATE & CONFIG ---
     let appSettings = {};
     let translations = {};
     let pingIntervalId = null;
-    const appVersion = '2.0.1';
+    const appVersion = '2.1.0';
   
     // ICONS
 
@@ -30,11 +28,15 @@ document.addEventListener('DOMContentLoaded', () => {
     // HTML elements
     const mainAppScreen = document.getElementById('main-app-screen');
     const setupModal = document.getElementById('setup-screen-modal');
-    const finishSetupBtn = document.getElementById('finish-setup-btn');
+    const finishSetupBtn = document.getElementById('discord-login-btn');
+        const sidebar = document.getElementById('sidebar');
+     const userpfp = document.getElementById('prfo');
+
     const sidebarProfileName = document.getElementById('sidebar-username');
     const navLinks = document.querySelectorAll('.nav-link');
     const pageContents = document.querySelectorAll('.page-content');
     const newsContainer = document.getElementById('news-container');
+    const iconsse = document.getElementById('icons-select');
     const serverListContainer = document.getElementById('server-list-container');
     const languageSelect = document.getElementById('language-select');
     const themeSwatches = document.querySelectorAll('.theme-swatch');
@@ -47,6 +49,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
    // Settings
 
+    // played uno for 3 hours straight omgggg im done
+    // discord login stuff
+
+    const username = localStorage.getItem('discordUsername');
+    const userPfp = localStorage.getItem('discordPfp');
+
+
+
     /// Load
 
     function loadSettings() {
@@ -56,6 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
             theme: settings.theme || 'dark',
             language: settings.language || 'en',
             pingInterval: settings.pingInterval || 10000,
+            sideicons : settings.sideicons || 'cla',
             startup: settings.startup || false
         };
     }
@@ -74,8 +85,9 @@ document.addEventListener('DOMContentLoaded', () => {
         
         updateUIFromSettings();
 
-        if (appSettings.username) {
+        if (username && userPfp) {
             mainAppScreen.style.visibility = 'visible';
+        
             setupModal.style.display = 'none';
             document.getElementById('VApp').innerText = `Version: ${appVersion}`;
 
@@ -89,7 +101,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             mainAppScreen.style.visibility = 'hidden';
             setupModal.style.display = 'flex';
-            document.querySelector('.theme-swatch[data-theme="dark"]').classList.add('active'); // Default active swatch in setup
+         //   document.querySelector('.theme-swatch[data-theme="dark"]').classList.add('active'); // Default active swatch in setup
         }
         addNavEventListeners();
     }
@@ -97,17 +109,17 @@ document.addEventListener('DOMContentLoaded', () => {
     /// UI Building & Updating
 
     function updateUIFromSettings() {
+
         document.documentElement.setAttribute('data-theme', appSettings.theme);
-        themeSwatches.forEach(swatch => swatch.classList.toggle('active', swatch.dataset.theme === appSettings.theme));
+        iconsse.value = appSettings.sideicons;
         languageSelect.value = appSettings.language;
+      //  sideicons.value = appSettings.sideicons;
         pingIntervalSelect.value = appSettings.pingInterval;
         startupCheckbox.checked = appSettings.startup;
 
 
          // welcome thing 
-        UserS.textContent = appSettings.username;
-       
-
+  
         // welcome messages
 
            const phrases = [
@@ -130,28 +142,98 @@ document.addEventListener('DOMContentLoaded', () => {
         ];
 
 
-        if (appSettings.username) {
 
             const randomIndex = Math.floor(Math.random() * phrases.length);
-      
+          
             const randomPhrase = phrases[randomIndex];
+            UserS.textContent = username;
+            
 
-            sidebarProfileName.textContent = appSettings.username;
-            document.querySelector('.welcome-header h1').textContent = `${ randomPhrase } ${appSettings.username}`;
-        }
+
+         sidebarProfileName.textContent = username;
+      document.querySelector('.welcome-header h1').textContent = `${ randomPhrase } ${username}`;
+        
     }
+
+
+    /// Home Changing Background
+
+    const backgrounds = [
+        'url("./imgs/backgrounds/tilted.jpg")',
+        'url("./imgs/backgrounds/tiltedup.jpg")',
+        'url("./imgs/backgrounds/samu.jpg")',
+        'url("./imgs/backgrounds/bri.jpg")',
+    ]
+
+    function changeBackground() {
+        const randomIndex = Math.floor(Math.random() * backgrounds.length);
+        document.body.style.backgroundImage = backgrounds[randomIndex];
+    }
+    changeBackground();
+    setInterval(changeBackground, 60000); 
+
+
     
     /// Building Sidebar & functionality
 
 
-    function buildSidebar() {
-        document.querySelector('.sidebar ul').innerHTML = `
-            <li><a href="#" class="nav-link active" data-page="home">${ICONS.home}<span data-i18n="home">${translations.home || 'Home'}</span></a></li>
-              <li><a href="#" class="nav-link" data-page="shop">${ICONS.shop}<span data-i18n="shop">${translations.shop || 'Shop'}</span></a></li>
-            <li><a href="#" class="nav-link" data-page="servers">${ICONS.servers}<span data-i18n="servers">${translations.servers || 'Servers'}</span></a></li>
-            <li><a href="#" class="nav-link" data-page="settings">${ICONS.settings}<span data-i18n="settings">${translations.settings || 'Settings'}</span></a></li>
+    async function buildSidebar(type) {
+
+        try {
+
+        if (type) appSettings.sideicons = type;
+        saveSettings();
+
+
+        if (appSettings.sideicons === 'cla') {
+       
+   const logoo = document.getElementById('logoo');
+            logoo.src = './imgs/logo.png'
+            logoo.alt = 'logo'
+            const fnstatusspn = document.getElementById('fnstatusspn');
+            fnstatusspn.textContent = 'FNStatus :'
+            const thidk = document.getElementById('thidk');
+            thidk.style.marginTop = '105px';
+            sidebar.style.width = '240px';
+            const sidepro = document.getElementById('sidepro');
+            sidepro.classList.remove('proexpand');
+             document.querySelector('.sidebar ul').innerHTML = `
+            <li style="cursor : pointer;"><a href="#" class="nav-link active" data-page="home">${ICONS.home}<span data-i18n="home">${translations.home || 'Home'}</span></a></li>
+              <li style="cursor : pointer;"><a href="#" class="nav-link" data-page="shop">${ICONS.shop}<span data-i18n="shop">${translations.shop || 'Shop'}</span></a></li>
+            <li style="cursor : pointer;"><a href="#" class="nav-link" data-page="servers">${ICONS.servers}<span data-i18n="servers">${translations.servers || 'Servers'}</span></a></li>
+            <li style="cursor : pointer;"><a href="#" class="nav-link" data-page="settings">${ICONS.settings}<span data-i18n="settings">${translations.settings || 'Settings'}</span></a></li>
         `;
-        addNavEventListeners();
+
+        }
+
+        else if (appSettings.sideicons === 'com') {
+            
+
+            const logoo = document.getElementById('logoo');
+            logoo.src = ''
+            logoo.alt = ''
+            
+            const fnstatusspn = document.getElementById('fnstatusspn');
+            const thidk = document.getElementById('thidk');
+            sidebar.style.width = '70px';     
+            thidk.style.marginTop = '200px'; // this is the fnstatus dot 
+            fnstatusspn.textContent = ' '
+            const sidepro = document.getElementById('sidepro');
+            sidepro.classList.add('proexpand');
+
+
+
+             document.querySelector('.sidebar ul').innerHTML = `
+            <li  style="width : 50px; cursor : pointer;"><a href="#" style="color : transparent;" class="nav-link active"" data-page="home">${ICONS.home}<span data-i18n="home">${translations.home || 'Home'}</span></a></li>
+              <li style="width : 50px; cursor : pointer;"><a style="color : transparent; href="#" class="nav-link" data-page="shop">${ICONS.shop}<span data-i18n="shop">${translations.shop || 'Shop'}</span></a></li>
+            <li style="width : 50px; cursor : pointer;"><a style="color : transparent; href="#" class="nav-link" data-page="servers">${ICONS.servers}<span data-i18n="servers">${translations.servers || 'Servers'}</span></a></li>
+            <li style="width : 50px; cursor : pointer;"><a style="color : transparent; href="#" class="nav-link" data-page="settings">${ICONS.settings}<span data-i18n="settings">${translations.settings || 'Settings'}</span></a></li>
+        `;
+
+        }
+
+        addNavEventListeners(); 
+        } catch (error) { console.error("Error building sidebar:", error); }
     }
 
     // Server Pinging 
@@ -189,6 +271,8 @@ document.addEventListener('DOMContentLoaded', () => {
             updateUIFromSettings(); 
         } catch (error) { showNotification('error', 'Language Load Error', `Failed to load language file: ${lang}. Please check your connection or try again later.`); }
     }
+
+    
 
     // --- EVENT LISTENERS ---
     function addNavEventListeners() {
@@ -281,43 +365,21 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
     finishSetupBtn.addEventListener('click', () => {
-        const username = document.getElementById('username-input').value.trim();
-        if (username) {
-            appSettings.username = username;
-            saveSettings();
-            initialize();
-        } else {
-            showNotification('error', 'Invalid Username', 'Please enter a valid username.');
-            
-        }
+  
     });
 
-    themeSwatches.forEach(swatch => {
-        swatch.addEventListener('click', () => {
-            appSettings.theme = swatch.dataset.theme;
-            updateUIFromSettings();
-            saveSettings();
-        });
-    });
-
+ 
     languageSelect.addEventListener('change', () => { loadLanguage(languageSelect.value).then(saveSettings); });
     
+    iconsse.addEventListener('change', () => { buildSidebar(iconsse.value).then(saveSettings); });
+    
+
     pingIntervalSelect.addEventListener('change', () => {
         appSettings.pingInterval = parseInt(pingIntervalSelect.value);
         saveSettings();
         startPingInterval();
     });
 
-    saveUsernameBtn.addEventListener('click', () => {
-        const newUsername = document.getElementById('username-settings-input').value.trim();
-        if(newUsername) {
-            appSettings.username = newUsername;
-            saveSettings();
-            updateUIFromSettings();
-        
-            showNotification('success', 'Username Updated!', `Your username has been changed to ${newUsername}.`);
-        }
-    });
     
     startupCheckbox.addEventListener('change', () => {
         appSettings.startup = startupCheckbox.checked;
@@ -340,6 +402,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     // --- START APP ---
-    initialize();
+  
+document.addEventListener('DOMContentLoaded', () => {
+
+      initialize();
+
 });
+
+
+
+function refresh() {
+
+initialize();
+
+
+}
+
+export default refresh;
 

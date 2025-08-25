@@ -3,8 +3,9 @@
         const statusList = document.getElementById('status-container');
         const epicStatusApiUrl = 'https://status.epicgames.com/api/v2/summary.json';
         const fortniteServices = ['Fortnite', 'LEGO Fortnite', 'Fortnite Festival', 'UEFN', '', 'Account Services', '', 'Epic Games Store', 'Epic Online Services' , 'Fortnite Crew', '',  ];
+        const generalstatus = document.getElementById('general-status');
 
-  
+
         try {
             const response = await fetch(epicStatusApiUrl);
             const data = await response.json();
@@ -29,6 +30,10 @@
                     statusItem.appendChild(statusNameSpan);
                     statusItem.appendChild(statusIndicator);
                     statusList.appendChild(statusItem);
+
+                    generalstatus.style.backgroundColor =  data.status.indicator === 'none' ? 'green' : data.status.indicator === 'minor' ? 'orange' : 'red'
+                    
+
                 });
             } else {
                 statusList.innerHTML = `
